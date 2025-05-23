@@ -1,0 +1,21 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
+            <img src="{% static 'core/img/logo.jpg' %}" alt="Vesttern" class="me-2 rounded nav-logo">
+            Vesttern
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'development' %}">Разработка</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'support' %}">Сопровождение</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'replication' %}">Размножение</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">Портфолио</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

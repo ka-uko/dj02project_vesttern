@@ -1,0 +1,63 @@
+/* Базовая стилизация */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Стили для логотипа */
+.nav-logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Навигация */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* желтый акцент */
+}
+
+/* Основной контент */
+main {
+    min-height: 80vh;
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Кнопки */
+.btn-custom {
+    background-color: #212529;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #343a40;
+    color: #ffc107;
+}
+
+/* Футер */
+footer {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Адаптивный отступ */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
